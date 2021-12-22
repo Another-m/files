@@ -8,7 +8,6 @@ with open('recipes.txt', encoding='utf-8') as file:
             f = file.readline().strip()
             if f == '': return
         title = f
-        # print(title)
         n_str = file.readline().strip()
         for n in range(int(n_str)):
             string = file.readline().strip().split('|')
@@ -20,10 +19,6 @@ with open('recipes.txt', encoding='utf-8') as file:
 
     def func_print():
         dicts()
-        # try: person_count = int(input("Введите количество персон: "))
-        # except: func_print()
-        # print(cook_book)
-        # print()
         for recipes in cook_book.items():
             for recipe in recipes:
                 print(recipe)
